@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Principal</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <div class="cuerpo_principal">
+
+    <div class="cont_paginas">
+      <form action="http://localhost:3000/submit" method="POST">
+        <div class="paginas">
+          <h3 class="txt_integrantes_titulo">Integrantes del Grupo:</h3>
+          <li class="txt_integrantes">Josselyn Fajardo</li>
+          <li class="txt_integrantes">Edwin Bajaña</li>
+          <li class="txt_integrantes">Pedro Palma</li>
+          <li class="txt_integrantes">Michael Avilés</li>
+
+          <h3 class="texto_cabecera">Formulario de censo poblacional</h3>
+
+          <div id="contenido" class="contenedor-inputs">
+
+            <div class="imput1">
+              <div class="imput2">
+                <label>Nombre completo:</label>
+                <br>
+                <input type="text" id="txt_nombre" name="txt_nombre" placeholder="Nombre completo" class="input-48" required>
+              </div>
+
+              <div class="imput3">
+                <label>Nacionalidad:</label>
+                <br>
+                <input type="text" id="txt_nacionalidad" name="txt_nacionalidad" placeholder="Nacionalidad" class="input-48"
+                  required>
+              </div>
+            </div>
+            <br>
+
+            <div class="imput1">
+              <div class="imput2">
+                <label>Documento de identidad:</label>
+                <br>
+                <input type="text" id="txt_cedula" name="txt_cedula" placeholder="Documento de identidad" class="input-48"
+                  required>
+              </div>
+
+              <div class="imput3">
+                <label>Dirección de residencia:</label>
+                <br>
+                <input type="text" id="txt_direccion" name="txt_direccion" placeholder="Dirección completa" class="input-48"
+                  required>
+              </div>
+            </div>
+            <br>
+
+
+            <div class="imput1">
+              <div class="imput2">
+                <label>Numero de teléfono:</label>
+                <br>
+                <input type="text" id="txt_telefono" name="txt_telefono" placeholder="Número de telefono" class="input-48"
+                  required>
+              </div>
+
+              <div class="imput3">
+                <label>Correo electrónico:</label>
+                <br>
+                <input type="text" id="txt_correo" name="txt_correo" placeholder="Correo electrónico" class="input-48"
+                  required>
+              </div>
+            </div>
+            <br>
+
+            <div class="div_botones">
+              <button type="submit" class="boton" id="btn_guardar">Guardar</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+  
+  <div id="respuesta"></div>
+
+</body>
+
+</html>
